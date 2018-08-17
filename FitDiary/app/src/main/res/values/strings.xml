@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FitDiary</string>
+    <string name="FACEBOOK_APP_ID">425577934634799</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">865765ad6ed3ee6140185ae5c1c2b8e8</string>
+    <string name="ak_login_protocol_scheme">ak425577934634799</string>
+    <string name="login_email_label">Login with Email</string>
+    <string name="login_phone_label">Login with Phone Number</string>
+    <string name="account">Account</string>
+    <string name="id_label">Account ID</string>
+    <string name="phone_label">Phone Number</string>
+    <string name="email_label">Email</string>
+    <string name="logout_label">Log Out</string>
+</resources>
