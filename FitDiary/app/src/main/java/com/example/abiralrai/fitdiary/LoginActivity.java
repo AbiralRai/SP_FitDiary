@@ -1,8 +1,8 @@
 package com.example.abiralrai.fitdiary;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -12,6 +12,8 @@ import com.facebook.accountkit.AccountKitLoginResult;
 import com.facebook.accountkit.ui.AccountKitActivity;
 import com.facebook.accountkit.ui.AccountKitConfiguration;
 import com.facebook.accountkit.ui.LoginType;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 
 public class LoginActivity extends AppCompatActivity {
     public static int APP_REQUEST_CODE = 1;
@@ -67,12 +69,15 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onPhoneLogin(View view) {
 
+        AppEventsLogger logger = AppEventsLogger.newLogger(this);
+        logger.logEvent("onPhoneLogin");
         onLogin(LoginType.PHONE);
     }
 
     public void onEmailLogin(View view) {
 
-
+        AppEventsLogger logger = AppEventsLogger.newLogger(this);
+        logger.logEvent("onEmailLogin");
         onLogin(LoginType.EMAIL);
     }
 
