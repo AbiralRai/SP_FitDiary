@@ -8,10 +8,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.accountkit.AccountKit;
+import com.facebook.accountkit.Account;
+import com.facebook.accountkit.PhoneNumber;
+import com.facebook.accountkit.AccountKitCallback;
 import com.facebook.accountkit.AccountKitError;
-import com.google.i18n.phonenumbers.NumberParseException;
-import com.google.i18n.phonenumbers.PhoneNumberUtil;
-import com.google.i18n.phonenumbers.Phonenumber;
 
 import java.util.Locale;
 
@@ -25,6 +25,11 @@ public class AccountActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
+
+        id = (TextView) findViewById(R.id.id);
+        infoLabel = (TextView) findViewById(R.id.info_label);
+        info = (TextView) findViewById(R.id.info);
+
 
 
     }
